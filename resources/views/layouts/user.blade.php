@@ -8,7 +8,7 @@
     {{-- Google fonts --}}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600&family=Poppins:wght@300;400;600&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
-    <title>Zdrava ishrana</title>
+    <title>Zdrava ishrana </title>
 </head>
 <body>
 
