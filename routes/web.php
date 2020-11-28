@@ -34,3 +34,7 @@ Route::post('/register', [RegistarController::class, 'store']);
 Route::get('/', function () {
     return view('pages.index');
 })->name('home');
+
+Route::get('/drinks', function () {
+    return view('pages.drinks');
+})->name('drinks');
