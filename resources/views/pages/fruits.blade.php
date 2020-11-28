@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
-	</head>
-<body>
+<@extends('layouts.app')
+@section('content')
+
 </div>
 	<div class="container">
 		<div class="row">
@@ -55,4 +51,6 @@ naslov{
 }
 
 </style>
-</html>
+@endsection
+@section("style")
+@endsection
