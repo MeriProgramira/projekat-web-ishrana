@@ -38,3 +38,19 @@ Route::get('/', function () {
 Route::get('/drinks', function () {
     return view('pages.drinks');
 })->name('drinks');
+
+
+Route::get('/vegetable', function () {
+    return view('pages.vegetable');
+})->name('vegetable');
+
+Route::get('/fruits', function () {
+    return view('pages.fruits');
+})->name('fruits');
+
+Route::get('/vitamins', function () {
+    return view('pages.vitamins');
+})->name('vitamins');
+
+
+

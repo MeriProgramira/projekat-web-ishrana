@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<@extends('layouts.app')
+@section('content')
 
-</head>
-<body>
 <div class="container">
 			<div class="row">
 				<img class="main-image" src="https://www.tportal.hr/media/thumbnail/900x540/66231.jpeg?cropId=0">
@@ -33,10 +29,10 @@ Vitamin E<br><br>
 Ovaj se vitamin može pronaći u pšeničnim klicama, ali ljudi ga ipak češće dobivaju iz sjemenki suncokreta ili badema jer se te namirnice češće konzumiraju.<br>
 
 </p>
+@endsection
+
+@section('style')
+
+@endsection			
 			
 			
-			
-</body>		
-<style>
-</style>
-</html>
