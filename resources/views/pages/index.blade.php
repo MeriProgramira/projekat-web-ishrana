@@ -31,19 +31,19 @@
             <div class="row bitno-hrana text-uppercase  ">
 
                 <div id="jedanA" class="col-lg-3 col-md-3 col-xs-12 d-flex align-items-center justify-content-center">
-                    <a href="#1" >NAJZDRAVIJE POVRĆE</a>
+                    <a href="{{ route('vegetable') }}" >NAJZDRAVIJE POVRĆE</a>
                 </div>
 
                 <div id="dvaA" class="col-lg-3 col-md-3 col-xs-12 d-flex align-items-center justify-content-center">
-                    <a href="#2">NAJZDRAVIJE VOĆE</a>
+                    <a href="{{ route('fruits') }}">NAJZDRAVIJE VOĆE</a>
                 </div>
 
                 <div id="triA" class="col-lg-3 col-md-3 col-xs-12 d-flex align-items-center justify-content-center">
-                    <a href="#3">VITAMINI U HRANI</a>
+                    <a href="{{ route('vitamins') }}">VITAMINI U HRANI</a>
                 </div>
 
                 <div id="cetiriA" class="col-lg-3 col-md-3 col-xs-12 d-flex align-items-center justify-content-center">
-                    <a href="{{ route('drinks') }}">NAPITCI ZDRAVI A UKUSNI</a>
+                    <a href="{{ route('drinks') }}">ZDRAVI NAPITCI</a>
                 </div>
             </div>
         </section>
