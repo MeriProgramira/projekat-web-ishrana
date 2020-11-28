@@ -43,7 +43,7 @@
                 </div>
 
                 <div id="cetiriA" class="col-lg-3 col-md-3 col-xs-12 d-flex align-items-center justify-content-center">
-                    <a href="#4">NAPITCI ZDRAVI A UKUSNI</a>
+                    <a href="{{ route('drinks') }}">NAPITCI ZDRAVI A UKUSNI</a>
                 </div>
             </div>
         </section>
