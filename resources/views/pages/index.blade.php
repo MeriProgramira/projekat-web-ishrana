@@ -27,7 +27,7 @@
         </section>
 
         <section class="container-fluid " id="bitno-hrana">
-            <h1>Bitne činjenice o hrani</h1>
+            <h2>Bitne činjenice o hrani</h2>
             <div class="row bitno-hrana text-uppercase  ">
 
                 <div id="jedanA" class="col-lg-3 col-md-3 col-xs-12 d-flex align-items-center justify-content-center">
@@ -141,6 +141,9 @@
             background-position: calc(100% - 50px) center;
 
             }
+    h2{
+        top-margin:30px;
+    }
     </style>
 
 @endsection
