@@ -31,8 +31,13 @@
             </div>
         </section>
 
+<<<<<<< HEAD
         <section class="container-fluid my-2" id="bitno-hrana">
             <h1>Bitne činjenice o hrani</h1>
+=======
+        <section class="container-fluid " id="bitno-hrana">
+            <h2>Bitne činjenice o hrani</h2>
+>>>>>>> ecf6105b29257ae4026c53dd0830af4973ffd554
             <div class="row bitno-hrana text-uppercase  ">
 
                 <div id="jedanA" class="col-lg-3 col-md-6 col-xs-12 d-flex align-items-center justify-content-center food">
@@ -375,6 +380,7 @@
                 padding: 5% 0;
 
             }
+<<<<<<< HEAD
 
 
             .header{
@@ -413,6 +419,12 @@
 		background-color:red;
 	}
  </style>
+=======
+    h2{
+        top-margin:30px;
+    }
+    </style>
+>>>>>>> ecf6105b29257ae4026c53dd0830af4973ffd554
 
 @endsection
 
