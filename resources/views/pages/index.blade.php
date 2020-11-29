@@ -375,7 +375,6 @@
                 padding: 5% 0;
 
             }
-<<<<<<< HEAD
 
 
             .header{
@@ -414,12 +413,6 @@
 		background-color:red;
 	}
  </style>
-=======
-    h2{
-        top-margin:30px;
-    }
-    </style>
->>>>>>> ecf6105b29257ae4026c53dd0830af4973ffd554
 
 @endsection
 
