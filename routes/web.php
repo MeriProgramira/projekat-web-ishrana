@@ -60,5 +60,42 @@ Route::get('/vitamins', function () {
     return view('pages.vitamins');
 })->name('vitamins');
 
+Route::get('humus', function () {
+    return view('pages.humus');
+})->name('humus');
 
+Route::get('persun', function () {
+    return view('pages.persun');
+})->name('persun');
 
+Route::get('grasak', function () {
+    return view('pages.grasak');
+})->name('grasak');
+
+Route::get('salata', function () {
+    return view('pages.salata');
+})->name('salata');
+
+Route::get('tikva', function () {
+    return view('pages.tikva');
+})->name('tikva');
+
+Route::get('brokula', function () {
+    return view('pages.brokula');
+})->name('brokula');
+
+Route::get('obrok', function () {
+    return view('pages.obrok');
+})->name('obrok');
+
+Route::get('sladoled', function () {
+    return view('pages.sladoled');
+})->name('sladoled');
+
+Route::get('zeleno', function () {
+    return view('pages.zeleno');
+})->name('zeleno');
+
+Route::get('omiljeni',function(){
+    return view('omiljeni_recepti.omiljeni');
+})->name('omiljeni');
