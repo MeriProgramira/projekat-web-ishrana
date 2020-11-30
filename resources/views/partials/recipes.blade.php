@@ -8,7 +8,7 @@
 
         <div class="row">
         <div id="korner" class="col-md-6">
-        <a href="humus" id="recept1" target="_blank"><h4>HUMUS</h4></a>
+        <a href="{{ route('humus') }}" id="recept1" target="_blank"><h4>HUMUS</h4></a>
         Humus je dokaz da zdrava hrana može biti jednostavna za pripremu.
         </div>
         <div id="korner" class="col-md-6">
