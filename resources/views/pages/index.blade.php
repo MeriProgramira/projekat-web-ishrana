@@ -376,16 +376,9 @@
                 padding: 5% 0;
 
             }
-<<<<<<< HEAD
-            body{
-		background-color:#f5edf1;
-	}
-	.header{
-=======
 
 
             .header{
->>>>>>> 38ff53b6b9c6e336992999be3a0e0ea3a1a21623
 		font-style:bold;
 		color:#635e52;
 	}
@@ -393,13 +386,8 @@
 		margin-top:7%;
 		background-size:5%;
 		font-size:15px;
-<<<<<<< HEAD
-		
-		
-=======
 
 
->>>>>>> 38ff53b6b9c6e336992999be3a0e0ea3a1a21623
 	}
 	#recepti div.recepti{
 		display: block;
@@ -412,32 +400,19 @@
 		margin-top:3%;
 	}
 	#dugmic{
-<<<<<<< HEAD
-		
-=======
-
->>>>>>> 38ff53b6b9c6e336992999be3a0e0ea3a1a21623
 		color: violet;
 		padding: 15px 32px;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
 		font-size: 16px;
-<<<<<<< HEAD
-		margin: 4px 2px;
-=======
 		margin: 18px 0;
->>>>>>> 38ff53b6b9c6e336992999be3a0e0ea3a1a21623
 		cursor: pointer;
 	}
 	#recepti1 a:hover {
 		background-color:red;
 	}
-<<<<<<< HEAD
-    </style>
-=======
  </style>
->>>>>>> 38ff53b6b9c6e336992999be3a0e0ea3a1a21623
 
 @endsection
 
