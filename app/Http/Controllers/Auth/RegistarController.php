@@ -11,6 +11,12 @@ use Illuminate\Support\Facades\Auth;
 
 class RegistarController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['guest']);
+    }
+
+
     public function index()
     {
         //dd(auth()->user());
