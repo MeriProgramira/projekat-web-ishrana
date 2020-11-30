@@ -1,6 +1,8 @@
 <@extends('layouts.app')
 @section('content')
 
+@include('partials.nav_links')
+
 </div>
 	<div class="container">
 		<div class="row">

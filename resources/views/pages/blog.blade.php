@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+@include('partials.nav_links')
+
     <div class="container  mt-5 ">
 
         @if ($posts->count())
@@ -36,7 +38,7 @@
             font-style: italic;
         }
         .post img {
-            width: 100%;
+            max-width: 100%;
         }
 
 

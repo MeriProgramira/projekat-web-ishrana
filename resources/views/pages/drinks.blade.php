@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+    @include('partials.nav_links')
+
 	<div class="container">
 		<div class="row">
 					<div id="napitak1"class="col-lg-6 col-md-6 col-sm-12">

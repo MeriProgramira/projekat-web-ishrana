@@ -1,6 +1,8 @@
 <@extends('layouts.app')
 @section('content')
 
+@include('partials.nav_links')
+
 <div class="container">
 			<div class="row">
 				<img class="main-image" src="https://www.tportal.hr/media/thumbnail/900x540/66231.jpeg?cropId=0">
@@ -33,6 +35,6 @@ Ovaj se vitamin može pronaći u pšeničnim klicama, ali ljudi ga ipak češće
 
 @section('style')
 
-@endsection			
-			
-			
+@endsection
+
+
