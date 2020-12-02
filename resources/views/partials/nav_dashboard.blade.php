@@ -2,7 +2,7 @@
     <ul class="nav justify-content-center" id="links">
         @if (auth()->user())
         <li class="nav-item">
-            <p>Logovani korisnik: <span>{{auth()->user()->name }}</span></p>
+            <p>Logovani korisnik: <span>{{auth()->user()->username }}</span></p>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/">vrati se na pocetnu stranicu</a>
@@ -32,8 +32,28 @@
 
         @endif
     </ul>
-
 </nav>
+
+{{-- Check if user is admin --}}
+@if (auth()->user() && auth()->user()->admin_role === 1)
+
+ <ul class="nav justify-content-center text-uppercase" id="admin-nav">
+    <li class="nav-item">
+      <a class="nav-link " href="#">Unesi farmera</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Svi farmeri</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Unesi savjet</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Svi savjeti</a>
+      </li>
+  </ul>
+
+@endif
+
 
 <style>
     body {
@@ -43,8 +63,8 @@
     }
 
      #links {
-      padding: 7px;
-      background-color: #90e332;
+      padding: 5px;
+      background-color: #31e063;
       margin: 0px;
   }
 
@@ -60,7 +80,7 @@
         color: #cc7a00;
     }
 
-        #links a {
+        #links a, #admin-nav a {
             padding: 20px;
             text-transform: uppercase;
             color: #535353;
@@ -69,7 +89,7 @@
 
         }
 
-        #links a:hover {
+        #links a:hover, #admin-nav a:hover {
             color:#f9faf8;
             text-decoration: none;
         }
@@ -88,5 +108,11 @@
             color: #535353;
             text-decoration: none;
             font-family:'Poppins' sans-serif;
+        }
+
+        #admin-nav {
+            background-color: #ced3d0;
+            margin: 0;
+            padding: 3px;
         }
 </style>

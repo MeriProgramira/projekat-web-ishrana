@@ -15,7 +15,7 @@
 
                             <img src="{{ $post->image }}" alt="food image" >
 
-                        <div class="row p-4">
+                        <div class="row py-5 px-3">
                             <p>{!! $post->content !!}</p>
                         </div>
                     </div>

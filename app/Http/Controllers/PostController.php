@@ -16,7 +16,7 @@ class PostController extends Controller
 
     public function index()
     {
-        $posts = Post::get();
+        $posts = Post::orderBy('created_at','desc' )->get();
         return view('posts.index', compact('posts'));
     }
 
@@ -68,5 +68,12 @@ class PostController extends Controller
 
         $file->move('uploads', $file->getClientOriginalName());
         return $path;
+    }
+
+    public function destroy(Post $post) {
+
+        $this->authorize('delete', $post);
+        $post->delete();
+        return back();
     }
 }

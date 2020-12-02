@@ -8,7 +8,7 @@
     <br> <br>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4 ">
+            <div class="col-lg-4 ">
                 <div class="item-health m-2 p-3">
                 <h6 class="p-2">Kurkuma-ljekovit začin</h6>
                 <div class="row m-2">
@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 ">
+            <div class="col-lg-4 ">
                 <div class="item-health m-2 p-3">
                 <h6 class="p-2">Aromaterapija eteričnim uljima</h6>
                 <div class="row m-2">
@@ -36,13 +36,14 @@
                 </div>
             </div>
 
-            <div class="col-md-4 ">
+            <div class="col-lg-4 ">
                 <div class="item-health m-2 p-3">
                 <h6 class="p-2">Prednosti jabučnog octa</h6>
                 <div class="row m-2">
-                    <div id="slika3" class="col-md-6">
+                    <div id="slika3" class="col-md-6 ">
+                        <img src="https://media.luftika.rs/2018/09/kurkuma.jpg" alt="">
                     </div>
-                        <div  class="col-md-6 text-item">
+                        <div  class="col-md-6 text-item flex-sm-column">
                             Jabučni ocat dobiva se fermentacijom prešanog jabučnog soka. Fermentacija je proces u kojem se šećer iz voća pretvara u ocat. Jabučni ocat je
                         <p class="readmore"><a href="#">...readmore</a></p>
                     </div>
@@ -50,6 +51,52 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row mb-2">
+
+        <div class="col-md-4">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Zacini</strong>
+                <h3 class="mb-0">Kurkuma-ljekovit začint</h3>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="card-text mb-auto">Kurkuma Indijski začin poznat po svojoj žarkoj boji, te pikantno-statkastom okusu, više je od zanimljivog dodatka jelima. Kurkuma se od</p>
+                <a href="#" class="stretched-link">nastavi citati</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="https://media.luftika.rs/2018/09/kurkuma.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">World</strong>
+                <h3 class="mb-0">Featured post</h3>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">World</strong>
+                <h3 class="mb-0">Featured post</h3>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              </div>
+            </div>
+          </div>
     </div>
 </section>
 
@@ -94,7 +141,8 @@
                color:#6f7a8c;
             }
 
-            #slika1 {
+            #slika1 img{
+
             background-image:url("https://media.luftika.rs/2018/09/kurkuma.jpg");
             background-size:cover;
             background-repeat: no-repeat;
