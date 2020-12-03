@@ -100,3 +100,7 @@ Route::get('zeleno', function () {
 Route::get('omiljeni',function(){
     return view('omiljeni_recepti.omiljeni');
 })->name('omiljeni');
+
+Route::get('namirnice', function(){
+    return view('namirnice');
+    });
