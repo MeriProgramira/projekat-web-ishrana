@@ -1,5 +1,8 @@
 <@extends('layouts.app')
 @section('content')
+
+@include('partials.nav_links')
+
     <div class="container  mt-5 ">
          <div class="container post">
                     <h3 class="text-uppercase p-3"></h3>
@@ -34,6 +37,8 @@
 
 
     </style>
+@endsection
 
+@section('style')
 
 @endsection
