@@ -20,20 +20,18 @@
 						<div class ="col-lg-4 col-md-4 col-xs-12">
 							<h3>Proizvodi iz plasteničkog uzgoja</h3>
 							<img src="https://ennafruit.hr/wp-content/uploads/2020/04/zelena-salata-1-300x300.jpg">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi. Feugiat nibh sed pulvinar proin. At auctor urna nunc id. Convallis a cras semper auctor neque vitae tempus quam pellentesque.</p>
+							<p>Zelena salata (lat. Lactuca sativa) od davnina je čvrsto zauzela svoje mjesto na kuhinjskim stolovima diljem svijeta. Njeno porijeklo nije točno utvrđeno, no prema nekim spoznajama današnja salata je potomak samonikle vrste s područja Sibira.Još su stari Grci prepoznali njezina svojstva i obilno je koristili.</p>
 							</div>
 
 						<div class ="col-lg-4 col-md-4 col-xs-12">
 							<h3>Organsko povrće</h3>
 							<img src="https://agrimatco.hr/proizvodi/sjeme-povrca/lukovicasto-povrce/luk/lorenzos-f1.jpg">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi. Feugiat nibh sed pulvinar proin. At auctor urna nunc id. Convallis a cras semper auctor neque vitae tempus quam pellentesque.</p>
-
+							<p>Tvrde da nije moguće. Moguće je. Proizvodnje hrane na organski način. „Organski“ se kao termin pojavljuje 1942. godine i stoji za mnoge različite načine uzgoja hrane kojima je zajedničko to da se hrana uzgaja bez agrokemikalija i umjetnog mineralnog gnojiva, te se uzgaja po principu suradnje s prirodom,</p>
 						</div>
 						<div class ="col-lg-4 col-md-4 col-xs-12">
-							<h3>Za zimnicu</h3>
+							<h3>O zimnici</h3>
 							<img src="https://www.broskva.hr/wp-content/uploads/2018/07/IMG_20181015_141027-300x300.jpg ">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi. Feugiat nibh sed pulvinar proin. At auctor urna nunc id. Convallis a cras semper auctor neque vitae tempus quam pellentesque.</p>
-
+							<p>Za hladnijih danima na obiteljske stolove diljem Bosne i Hercegovine vraća se zimnica. Njena priprema na ovim prostorima je tradicija, ali i potreba, osobito onima za koje je postala i uspješan biznis. Spremanje zimnice u nekim krajevima BiH ove je godine luksuz s obzirom na visoke cijene povrća i voća na pijacama.</p>
 						</div>
 
 			</div>
