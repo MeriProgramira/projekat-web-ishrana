@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateNamirniceTable extends Migration
+class CreateProducersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,18 @@ class CreateNamirniceTable extends Migration
      */
     public function up()
     {
-        Schema::create('namirnice', function (Blueprint $table) {
+        Schema::create('producers', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
-            $table->text('content');
-            $table->string('image')->nullable();
+            $table->string('title');
+            $table->string('location');
+            $table->string('products');
+            $table->text('about');
+            $table->string('image');
             $table->bigInteger('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
-
 
     /**
      * Reverse the migrations.
@@ -32,6 +33,6 @@ class CreateNamirniceTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('namirnice');
+        Schema::dropIfExists('producers');
     }
 }

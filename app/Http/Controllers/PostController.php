@@ -70,6 +70,41 @@ class PostController extends Controller
         return $path;
     }
 
+    public function edit($id) {
+
+        $post = Post::find($id);
+        return view('posts.update', compact('post'));
+
+    }
+
+    public function updatePost(Request $request, $id) {
+
+        $post = Post::find($id);
+
+        $this->validate($request, [
+            'title' => 'required',
+            'content' => 'required',
+        ]);
+
+        $image = $request->file('image');
+        if($image != "") {
+            $this->validate($request, [
+                'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+            ]);
+            $path =$this->uploadImage($request);
+            $post->image = $path;
+        }
+
+        $post->title = $request->input('title');
+        $post->content = $request->input('content');
+
+        $post->save();
+
+        return redirect()->route('dashboard');
+        //->with('success', 'Post je uspjesno azuriran');
+
+    }
+
     public function destroy(Post $post) {
 
         $this->authorize('delete', $post);

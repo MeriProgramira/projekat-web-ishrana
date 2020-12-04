@@ -39,16 +39,16 @@
 
  <ul class="nav justify-content-center text-uppercase" id="admin-nav">
     <li class="nav-item">
-      <a class="nav-link " href="#">Unesi farmera</a>
+      <a class="nav-link " href="{{ route('producers') }}">Svi proizvodaci</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Svi farmeri</a>
+      <a class="nav-link" href="{{ route('create-producer') }}">Unesi proidvodaca</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Unesi savjet</a>
+      <a class="nav-link" href="#">Unesi namjernicu</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Svi savjeti</a>
+        <a class="nav-link" href="#">Sve namjernice</a>
       </li>
   </ul>
 

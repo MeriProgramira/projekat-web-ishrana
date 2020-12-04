@@ -34,7 +34,7 @@
                             <a class="nav-link" href="#">Trendovi u ishrani</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Lokalni proizvodaci</a>
+                            <a class="nav-link" href="{{ route('proizvodjaci') }}">Lokalni proizvodaci</a>
                         </li>
                     </ul>
             </nav>

@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProducerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,8 +38,23 @@ Route::get('/posts', [PostController::class, 'index'])->name('posts');
 Route::get('/create-post', [PostController::class, 'create'])->name('create-post');
 Route::post('/create-post', [PostController::class, 'store']);
 Route::delete('/delete-post/{post}', [PostController::class, 'destroy'])->name('delete-post');
+Route::get('/update-post/{post}', [PostController::class, 'edit'])->name('update-post')->middleware('auth');
+Route::put('/update-post/{post}', [PostController::class, 'updatePost'])->name('update-post');
 
 Route::get('/blog', [PostController::class, 'indexBlog'])->name('blog');
+
+//Producers
+Route::get('/producers', [ProducerController::class, 'index'])->name('producers');
+Route::get('/create-producer', [ProducerController::class, 'create'])->name('create-producer')->middleware('auth');
+Route::post('/create-producer', [ProducerController::class, 'store'])->middleware('auth');
+Route::delete('/delete-producer/{producer}', [ProducerController::class, 'destroy'])->name('delete-producer');
+Route::get('/update-producer/{producer}', [ProducerController::class, 'edit'])->name('update-producer')->middleware('auth');
+Route::put('/update-producer/{producer}', [ProducerController::class, 'updateProducer'])->name('update-producer')->middleware('auth');
+
+Route::get('/proizvodjaci', [ProducerController::class, 'indexProducer'])->name('proizvodjaci');
+
+
+//Route::get('/blog', [PostController::class, 'indexBlog'])->name('blog');
 
 Route::get('/', function () {
     return view('pages.index');

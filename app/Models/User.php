@@ -47,4 +47,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Post::class);
     }
+
+    public function producers()
+    {
+        return $this->hasMany(Producer::class);
+    }
 }
