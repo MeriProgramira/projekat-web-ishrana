@@ -28,7 +28,7 @@
                             <a class="nav-link" href="#">Zdrave namjernice <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Recepti</a>
+                            <a class="nav-link" href="{{ route('recepti') }}">Recepti</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Trendovi u ishrani</a>
@@ -45,7 +45,7 @@
             <ul class="navbar-nav justify-content-start mt-3">
                 @if (auth()->user())
                     <li class="nav-item p-1">
-                        <a class="nav-link" href="{{ route('posts') }}">Dashboard</a>
+                        <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
                     </li>
                 @else
                     <li class="nav-item p-1">

@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Producer::class);
     }
+
+    public function recepti()
+    {
+        return $this->hasMany(Recept::class);
+    }
 }

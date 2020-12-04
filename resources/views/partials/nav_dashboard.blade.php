@@ -11,7 +11,13 @@
             <a class="nav-link" href="{{ route('posts') }}"">Posts</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('create-post') }}"">Unosi novi post</a>
+            <a class="nav-link" href="{{ route('create-post') }}"">Unesi novi post</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('svi-recepti') }}"">Recepti</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('create-recept') }}"">Unesi novi recept</a>
         </li>
         <li class="nav-item">
              <form action="{{ route('logout') }}" method="POST" id="formLogout">

@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProducerController;
+use App\Http\Controllers\ReceptController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,6 +53,16 @@ Route::get('/update-producer/{producer}', [ProducerController::class, 'edit'])->
 Route::put('/update-producer/{producer}', [ProducerController::class, 'updateProducer'])->name('update-producer')->middleware('auth');
 
 Route::get('/proizvodjaci', [ProducerController::class, 'indexProducer'])->name('proizvodjaci');
+
+//Recepti
+Route::get('/svi-recepti', [ReceptController::class, 'index'])->name('svi-recepti');
+Route::get('/create-recept', [ReceptController::class, 'create'])->name('create-recept')->middleware('auth');
+Route::post('/create-recept', [ReceptController::class, 'store'])->middleware('auth');
+Route::delete('/delete-recept/{recept}', [ReceptController::class, 'destroy'])->name('delete-recept');
+Route::get('/update-recept/{recept}', [ReceptController::class, 'edit'])->name('update-recept')->middleware('auth');
+Route::put('/update-recept/{recept}', [ReceptController::class, 'updateRecept'])->name('update-recept')->middleware('auth');
+
+Route::get('/recepti', [ReceptController::class, 'indexRecepti'])->name('recepti');
 
 
 //Route::get('/blog', [PostController::class, 'indexBlog'])->name('blog');
