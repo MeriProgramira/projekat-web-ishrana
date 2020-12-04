@@ -129,5 +129,5 @@ Route::get('omiljeni',function(){
 })->name('omiljeni');
 
 Route::get('namirnice', function(){
-    return view('namirnice');
+    return view('pages.namirnice');
     });

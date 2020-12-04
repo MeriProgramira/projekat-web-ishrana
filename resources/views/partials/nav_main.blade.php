@@ -25,7 +25,7 @@
             <nav class="">
                     <ul class="navbar-nav">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Zdrave namjernice <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">Zdrave namirnice</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('recepti') }}">Recepti</a>
