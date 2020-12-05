@@ -6,7 +6,11 @@
 <div class="container">
 		<h1>Zdrava ishrana</h1>
 		<div class="row">
+<<<<<<< HEAD
 			<div id="povrceslika"class="col-lg-9 col-12">
+=======
+			<div id="povrceslika" class="col-lg-9 col-md-9 col-xs-12">
+>>>>>>> dc4a45111a78b1b62071312870d644edd362bc12
 				<img src="https://radio.hrt.hr/data/article/127338_a257bb1081d3139d7627.jpg ">
 			</div>
 				<div id="tekst" class="col-lg-3 col-12">

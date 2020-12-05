@@ -21,7 +21,7 @@
             <label for="complexity">Slozenost recepta<span>*</span></label>
             <select class="selectpicker" name="complexity" data-style="form-control btn-secondary">
                 <option value="lagano">Lagano</option>
-                <option value="srednje_zahtjevno">Srednje zahtjevno</option>
+                <option value="srednje zahtjevno">Srednje zahtjevno</option>
                 <option value="slozeno">Slozeno</option>
             </select>
             @error('complexity')

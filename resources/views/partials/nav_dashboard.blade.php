@@ -51,10 +51,10 @@
       <a class="nav-link" href="{{ route('create-producer') }}">Unesi proidvodaca</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Unesi namjernicu</a>
+      <a class="nav-link" href="#">Unesi namirnicu</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Sve namjernice</a>
+        <a class="nav-link" href="#">Sve namirnicu</a>
       </li>
   </ul>
 
