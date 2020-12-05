@@ -69,8 +69,10 @@ class ReceptController extends Controller
         return $path;
     }
 
-    public function show(Recept $recept) {
-        return view('recepti.show', ['recept' =>$recept]);
+    public function show($id) {
+        $recept = Recept::find($id);
+        return view('recepti.show', compact('recept'));
+        //return view('recepti.show', ['recept' =>$recept]);
     }
 
     public function edit($id) {

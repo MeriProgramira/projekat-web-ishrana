@@ -63,6 +63,7 @@ Route::get('/update-recept/{recept}', [ReceptController::class, 'edit'])->name('
 Route::put('/update-recept/{recept}', [ReceptController::class, 'updateRecept'])->name('update-recept')->middleware('auth');
 
 Route::get('/recepti', [ReceptController::class, 'indexRecepti'])->name('recepti');
+Route::get('/recepti/{recept}', [ReceptController::class, 'show'])->name('recept');
 
 
 //Route::get('/blog', [PostController::class, 'indexBlog'])->name('blog');
@@ -70,6 +71,10 @@ Route::get('/recepti', [ReceptController::class, 'indexRecepti'])->name('recepti
 Route::get('/', function () {
     return view('pages.index');
 })->name('home');
+
+Route::get('/trendovi-hrana', function () {
+    return view('pages.food_trends');
+})->name('trendovi-hrana');
 
 Route::get('/drinks', function () {
     return view('pages.drinks');
