@@ -7,6 +7,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProducerController;
 use App\Http\Controllers\ReceptController;
+use App\Http\Controllers\NamirnicaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/dashboard/{id}', [DashboardController::class, 'index'])->name('dashboard');
 
 //login
 Route::get('/login', [LoginController::class, 'index'])->name('login');
@@ -65,6 +66,17 @@ Route::put('/update-recept/{recept}', [ReceptController::class, 'updateRecept'])
 Route::get('/recepti', [ReceptController::class, 'indexRecepti'])->name('recepti');
 Route::get('/recepti/{recept}', [ReceptController::class, 'show'])->name('recept');
 
+//Namirnice
+Route::get('/sve-namirnice', [NamirnicaController::class, 'index'])->name('sve-namirnice');
+Route::get('/create-namirnica', [NamirnicaController::class, 'create'])->name('create-namirnica')->middleware('auth');
+Route::post('/create-namirnica', [NamirnicaController::class, 'store'])->middleware('auth');
+Route::delete('/delete-namirnica/{namirnica}', [NamirnicaController::class, 'destroy'])->name('delete-namirnica');
+Route::get('/update-namirnica/{namirnica}', [NamirnicaController::class, 'edit'])->name('update-namirnica')->middleware('auth');
+Route::put('/update-namirnica/{namirnica}', [NamirnicaController::class, 'updateNamirnica'])->name('update-namirnica')->middleware('auth');
+
+Route::get('/namirnice', [NamirnicaController::class, 'indexNamirnica'])->name('namirnice');
+Route::get('/namirnice/{namirnica}', [NamirnicaController::class, 'show'])->name('namirnica');
+
 
 //Route::get('/blog', [PostController::class, 'indexBlog'])->name('blog');
 
@@ -75,6 +87,8 @@ Route::get('/', function () {
 Route::get('/trendovi-hrana', function () {
     return view('pages.food_trends');
 })->name('trendovi-hrana');
+
+// Omiljeno voce, povrce....
 
 Route::get('/drinks', function () {
     return view('pages.drinks');
@@ -92,6 +106,8 @@ Route::get('/fruits', function () {
 Route::get('/vitamins', function () {
     return view('pages.vitamins');
 })->name('vitamins');
+
+// Omiljeni recepti
 
 Route::get('humus', function () {
     return view('pages.humus');
@@ -133,6 +149,17 @@ Route::get('omiljeni',function(){
     return view('omiljeni_recepti.omiljeni');
 })->name('omiljeni');
 
-Route::get('namirnice', function(){
-    return view('pages.namirnice');
-    });
+// Hrana i zdravlje
+Route::get('kurkuma',function(){
+    return view('zdravlje.kurkuma');
+})->name('kurkuma');
+
+Route::get('etericna-ulja',function(){
+    return view('zdravlje.etericna-ulja');
+})->name('etericna-ulja');
+
+Route::get('ocat',function(){
+    return view('zdravlje.ocat');
+})->name('ocat');
+
+

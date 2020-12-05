@@ -1,6 +1,4 @@
 <div class="container-fluid footer" id="kontakt">
-
-
     <div class="row  mx-3 contact align-content-center">
         <div class="col-md-4">
             <h2>ostanimo u kontaktu</h2>
@@ -20,13 +18,9 @@
 
 <style>
 
-
-    .footer {
-        height: 100vh;
-    }
-
-    .contact {
-        height: 25vh;
+    #kontakt {
+        background-color: #CDDCDC;
+        padding-top: 20px;
     }
 
     h2, h5 {

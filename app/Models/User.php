@@ -57,4 +57,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Recept::class);
     }
+
+    public function namirnice()
+    {
+        return $this->hasMany(Namirnica::class);
+    }
 }

@@ -41,7 +41,7 @@
         </div>
 
         <div id="korner" class="col-md-6">
-        <a href="{{ route('brokula') }}" class="recept" target="_blank"><h5>Krem supa od brokule</h5>></a>
+        <a href="{{ route('brokula') }}" class="recept" target="_blank"><h5>Krem supa od brokule</h5></a>
 
          Ova ukusna, bogata supa pružit će vam zdravlje i sreću - bez dodatnih mliječnih i zasićenih masti
         - i  nećete moći vjerovati koliko je divna i kremasta.
@@ -55,7 +55,8 @@
         <img src="https://images.unsplash.com/photo-1506458961255-571f40df5aad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80" height="530" width="600">
         </div>
         </div>
-        <a href="{{ route('recepti') }}" id="dugmic" class="btn ">SVI RECEPTI</a>
+        <a href="{{ route('recepti') }}" id="dugmic" class=" ">SVI RECEPTI</a>
+
 
     </div>
 </section>
@@ -98,7 +99,7 @@
 		font-size: 16px;
 		margin: 18px 0;
         cursor: pointer;
-        background-color:#f5edf1;
+        background-color:#f7d7e7;
 	}
 	#recepti1 a:hover {
 		background-color:red;
@@ -110,5 +111,9 @@
 
     a:hover {
         text-decoration: none;
+    }
+
+    #dugmic:hover {
+        color: black;
     }
 </style>

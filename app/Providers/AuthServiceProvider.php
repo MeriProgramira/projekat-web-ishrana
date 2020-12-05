@@ -7,9 +7,11 @@ use Illuminate\Support\Facades\Gate;
 use App\Models\Post;
 use App\Models\Recept;
 use App\Models\Producer;
+use App\Models\Namirnica;
 use App\Policies\PostPolicy;
 use App\Policies\ReceptPolicy;
 use App\Policies\ProducerPolicy;
+use App\Policies\NamirnicaPolicy;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,7 @@ class AuthServiceProvider extends ServiceProvider
         Post::class => PostPolicy::class,
         Producer::class => ProducerPolicy::class,
         Recept::class => ReceptPolicy::class,
+        Namirnica::class => NamirnicaPolicy::class,
     ];
 
     /**

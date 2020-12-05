@@ -25,7 +25,7 @@
             <nav class="">
                     <ul class="navbar-nav">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Zdrave namirnice <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{ route('namirnice') }}">Zdrave namirnice <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('recepti') }}">Recepti</a>
@@ -45,7 +45,7 @@
             <ul class="navbar-nav justify-content-start mt-3">
                 @if (auth()->user())
                     <li class="nav-item p-1">
-                        <a class="nav-link" href="{{ route('posts') }}">Dashboard</a>
+                        <a class="nav-link" href="{{ route('dashboard', ['id' => auth()->user()->id]) }}">Dashboard</a>
                     </li>
                 @else
                     <li class="nav-item p-1">
@@ -61,7 +61,7 @@
 
 <style>
     #main-navbar {
-         background-color: #CDDCDC;
+        background-color: #CDDCDC;
         background-image: radial-gradient(at 50% 100%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%);
         background-blend-mode: screen, overlay;
         /* background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);

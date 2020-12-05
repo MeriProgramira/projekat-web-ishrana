@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class DashboardController extends Controller
 {
@@ -11,8 +12,10 @@ class DashboardController extends Controller
         $this->middleware(['auth']);
     }
 
-    public function index()
+    public function index($id)
     {
-        return view('dashboard');
+
+        $user = User::find($id);
+        return view('dashboard', compact('user'));
     }
 }

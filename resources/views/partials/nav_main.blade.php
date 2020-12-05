@@ -25,11 +25,7 @@
             <nav class="">
                     <ul class="navbar-nav">
                         <li class="nav-item ">
-<<<<<<< HEAD
-                            <a class="nav-link" href="#">Zdrave namirnice <span class="sr-only">(current)</span></a>
-=======
-                            <a class="nav-link" href="#">Zdrave namirnice</a>
->>>>>>> 02268e135113091baec3783e1c3827caf2982c07
+                            <a class="nav-link" href="{{ route('namirnice') }}">Zdrave namirnice</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('recepti') }}">Recepti</a>
@@ -49,7 +45,7 @@
             <ul class="navbar-nav justify-content-start mt-3">
                 @if (auth()->user())
                     <li class="nav-item p-1">
-                        <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
+                        <a class="nav-link" href="{{ route('dashboard', ['id' => auth()->user()->id]) }}">Dashboard</a>
                     </li>
                 @else
                     <li class="nav-item p-1">

@@ -28,6 +28,10 @@
         @endif
     </div>
 
+    <div class="footer-full">
+        @include('partials.footer_links')
+    </div>
+
 @endsection
 
 @section('style')

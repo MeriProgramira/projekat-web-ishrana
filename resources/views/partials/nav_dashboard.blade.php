@@ -2,6 +2,9 @@
     <ul class="nav justify-content-center" id="links">
         @if (auth()->user())
         <li class="nav-item">
+            <a class="nav-link" href="{{ route('dashboard', ['id' => auth()->user()->id]) }}">dashboard</a>
+        </li>
+        <li class="nav-item">
             <p>Logovani korisnik: <span>{{auth()->user()->username }}</span></p>
         </li>
         <li class="nav-item">
@@ -51,10 +54,10 @@
       <a class="nav-link" href="{{ route('create-producer') }}">Unesi proidvodaca</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Unesi namirnicu</a>
+      <a class="nav-link" href="{{ route('create-namirnica') }}">Unesi namirnicu</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Sve namirnicu</a>
+        <a class="nav-link" href="{{ route('sve-namirnice') }}">Sve namirnice</a>
       </li>
   </ul>
 
@@ -117,7 +120,7 @@
         }
 
         #admin-nav {
-            background-color: #ced3d0;
+            background-color: #d3d9e3;
             margin: 0;
             padding: 3px;
         }

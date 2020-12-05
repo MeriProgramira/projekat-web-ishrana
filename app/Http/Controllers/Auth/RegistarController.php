@@ -58,7 +58,7 @@ class RegistarController extends Controller
 
         if (Auth::attempt($credentials)) {
             // Authentication passed...
-            return redirect()->route('dashboard');
+            return redirect()->route('dashboard', ['id' => auth()->user()->id])->with('name', auth()->user()->name);
         }
 
         //return redirect()->route('dashboard');
