@@ -23,7 +23,7 @@
 
 <style>
     #aboutUs {
-            margin: 5%  2%;
+            margin: 5%  0%;
             padding: 3% 2%;
         }
 

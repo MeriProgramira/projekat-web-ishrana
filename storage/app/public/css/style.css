@@ -1,13 +1,14 @@
 body {
-    /* margin: 0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
 #main-navbar {
-    height: 17vh;
-    margin: 5px 0px;
+
+    margin: 15px 0px;
+
 }
 .navbar-brand {
     float: right;
@@ -46,8 +47,10 @@ nav {
 }
 
 .hero {
-    height: 80vh;
+    height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/food_table_w.jpg);
 }
+
+
