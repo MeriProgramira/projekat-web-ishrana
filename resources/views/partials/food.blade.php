@@ -1,4 +1,4 @@
-<section class="container-fluid my-2" id="bitno-hrana">
+<section class="container-fluid my-2 mx-0" id="bitno-hrana">
     <h1>Bitne činjenice o hrani</h1>
     <div class="row bitno-hrana text-uppercase  ">
 

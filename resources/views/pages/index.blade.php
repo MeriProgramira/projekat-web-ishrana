@@ -6,7 +6,7 @@
     <div class="hero">
 
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid mx-0">
 
         @include('partials.aboutUs')
 
