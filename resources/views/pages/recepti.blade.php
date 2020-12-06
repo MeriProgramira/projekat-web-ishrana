@@ -59,7 +59,7 @@
         </div>
 
         @else
-            <p>Nemate nijednog lokalnog proizvodjaca unesenog u bazu podataka!</p>
+            <p>Nemate nijedan recept.!</p>
         @endif
 
 

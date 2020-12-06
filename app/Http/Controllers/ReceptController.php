@@ -27,9 +27,9 @@ class ReceptController extends Controller
     public function store(Request $request) {
 
         $this->validate($request, [
-            'title' => 'required',
+            'title' => 'required|max:255',
             'complexity' => 'required',
-            'short_description' => 'required',
+            'short_description' => 'required|max:255',
             'ingredients' => 'required',
             'preparation' => 'required',
             'dish_type' => 'required',
@@ -86,9 +86,9 @@ class ReceptController extends Controller
         $recept = Recept::find($id);
 
         $this->validate($request, [
-            'title' => 'required',
+            'title' => 'required|max:255',
             'complexity' => 'required',
-            'short_description' => 'required',
+            'short_description' => 'required|max:255',
             'ingredients' => 'required',
             'preparation' => 'required',
             'dish_type' => 'required',

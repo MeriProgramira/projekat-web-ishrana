@@ -27,9 +27,9 @@ class ProducerController extends Controller
     public function store(Request $request) {
 
         $this->validate($request, [
-            'title' => 'required',
-            'location' => 'required',
-            'products' => 'required',
+            'title' => 'required|max:255',
+            'location' => 'required|max:255',
+            'products' => 'required|max:255',
             'about' => 'required',
             'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
         ]);
@@ -80,9 +80,9 @@ class ProducerController extends Controller
         $producer = Producer::find($id);
 
         $this->validate($request, [
-            'title' => 'required',
-            'location' => 'required',
-            'products' => 'required',
+            'title' => 'required|max:255',
+            'location' => 'required|max:255',
+            'products' => 'required|max:255',
             'about' => 'required',
         ]);
 

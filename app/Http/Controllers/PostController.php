@@ -24,7 +24,7 @@ class PostController extends Controller
     {
         //dd('create');
         $this->validate($request, [
-            'title' => 'required',
+            'title' => 'required|max:255',
             'content' => 'required',
            //'image' => 'mimes:jpg, jpeg, png|required'
         ]);
@@ -82,7 +82,7 @@ class PostController extends Controller
         $post = Post::find($id);
 
         $this->validate($request, [
-            'title' => 'required',
+            'title' => 'required|max:255',
             'content' => 'required',
         ]);
 

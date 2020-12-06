@@ -26,7 +26,7 @@ class NamirnicaController extends Controller
     {
         //dd('create');
         $this->validate($request, [
-            'title' => 'required',
+            'title' => 'required|max:255',
             'content' => 'required',
             'type' => 'required',
             'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
@@ -80,7 +80,7 @@ class NamirnicaController extends Controller
         $namirnica = Namirnica::find($id);
 
         $this->validate($request, [
-            'title' => 'required',
+            'title' => 'required|max:255',
             'content' => 'required',
             'type' => 'required',
         ]);
