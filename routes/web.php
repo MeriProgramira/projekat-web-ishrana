@@ -77,6 +77,7 @@ Route::put('/update-namirnica/{namirnica}', [NamirnicaController::class, 'update
 Route::get('/namirnice', [NamirnicaController::class, 'indexNamirnica'])->name('namirnice');
 Route::get('/namirnice/{namirnica}', [NamirnicaController::class, 'show'])->name('namirnica');
 
+//Search
 
 //Route::get('/blog', [PostController::class, 'indexBlog'])->name('blog');
 

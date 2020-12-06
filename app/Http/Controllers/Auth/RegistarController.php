@@ -27,7 +27,7 @@ class RegistarController extends Controller
     {
         //validation
         $rules = [
-            'username' => 'required|max:30|unique:posts',
+            'username' => 'required|max:30',
             'name' => 'required|max:255',
             'email' => 'required|email',
             'password' => 'required|confirmed',
