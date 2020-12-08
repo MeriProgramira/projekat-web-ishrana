@@ -15,7 +15,7 @@ class ReceptController extends Controller
 
     public function index() {
 
-        $recepti = Recept::all();
+        $recepti = Recept::orderBy('created_at','desc' )->get();
         return view('recepti.index', compact('recepti'));
     }
 
@@ -48,7 +48,7 @@ class ReceptController extends Controller
             'image' => $path,
         ]);
 
-        return redirect()->route('dashboard');
+        return redirect()->route('dashboard', ['id' => auth()->user()->id])->with('name', auth()->user()->name);
     }
 
     private function uploadImage(Request $request)
@@ -111,7 +111,7 @@ class ReceptController extends Controller
         $recept->dish_type = $request->input('dish_type');
 
         $recept->save();
-        return redirect()->route('dashboard')->with('success', 'Recept je uspjesno azuriran');
+        return redirect()->route('dashboard', ['id' => auth()->user()->id])->with('name', auth()->user()->name)->with('success', 'Recept je uspjesno azuriran');
 
     }
 

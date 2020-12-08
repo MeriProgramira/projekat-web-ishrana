@@ -14,7 +14,9 @@
 <body>
 
 
-    @yield('content')
+        @yield('content')
+
+
 
     @yield('style')
 

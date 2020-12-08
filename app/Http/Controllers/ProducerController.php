@@ -15,7 +15,7 @@ class ProducerController extends Controller
 
     public function index() {
 
-        $producers = Producer::all();
+        $producers = Producer::orderBy('created_at','desc' )->get();
         return view('producers.index', compact('producers'));
     }
 
@@ -44,7 +44,7 @@ class ProducerController extends Controller
             'image' => $path,
         ]);
 
-        return redirect()->route('dashboard');
+        return redirect()->route('dashboard', ['id' => auth()->user()->id])->with('name', auth()->user()->name);
     }
 
     private function uploadImage(Request $request)
@@ -101,7 +101,7 @@ class ProducerController extends Controller
         $producer->about = $request->input('about');
 
         $producer->save();
-        return redirect()->route('dashboard')->with('success', 'Proizvodjac je uspjesno azuriran');
+        return redirect()->route('dashboard', ['id' => auth()->user()->id])->with('name', auth()->user()->name);
 
     }
 

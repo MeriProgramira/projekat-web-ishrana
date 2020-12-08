@@ -41,7 +41,9 @@ class NamirnicaController extends Controller
             'image' => $path,
         ]);
 
-        return redirect()->route('dashboard');
+        //return redirect()->route('home');
+
+        return redirect()->route('dashboard', ['id' => auth()->user()->id])->with('name', auth()->user()->name)->with('success', 'Namirnica je uspjesno kreirana');
     }
 
     public function create()
@@ -101,8 +103,10 @@ class NamirnicaController extends Controller
 
         $namirnica->save();
 
-        return redirect()->route('dashboard');
-        //->with('success', 'Post je uspjesno azuriran');
+        return redirect()->route('dashboard', ['id' => auth()->user()->id])->with('name', auth()->user()->name);
+
+
+        //->with('success', 'Namirnica je uspjesno azurirana');
 
     }
 

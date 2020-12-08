@@ -10,7 +10,7 @@ class Namirnica extends Model
     use HasFactory;
     public $table = 'namirnice';
 
-    public $fillable =['title','content','image','user_id'];
+    public $fillable =['title','type','content', 'content1','image','user_id'];
 
     public function user()
     {

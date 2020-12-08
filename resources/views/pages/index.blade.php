@@ -28,6 +28,10 @@
 @section('style')
 
     <style>
+       /*  * {
+  border: 1px solid #f00 !important;
+  background-color: blue;
+} */
 
     </style>
 

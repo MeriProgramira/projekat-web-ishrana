@@ -46,7 +46,7 @@
 <style>
 
             #zdravlje {
-                margin: 7%  1% 10% 1%;
+                margin: 7%  0% 10% 0%;
         ````}
 
              #zdravlje h1 {

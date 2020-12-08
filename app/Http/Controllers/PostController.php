@@ -43,7 +43,7 @@ class PostController extends Controller
             'image' => $path,
         ]);
 
-        return redirect()->route('dashboard');
+        return redirect()->route('dashboard', ['id' => auth()->user()->id])->with('name', auth()->user()->name);
     }
 
     public function create()
@@ -100,7 +100,7 @@ class PostController extends Controller
 
         $post->save();
 
-        return redirect()->route('dashboard');
+        return redirect()->route('dashboard', ['id' => auth()->user()->id])->with('name', auth()->user()->name);
         //->with('success', 'Post je uspjesno azuriran');
 
     }

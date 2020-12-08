@@ -79,4 +79,16 @@
             background-position: calc(100% - 50px) center;
             }
 
+            @media (min-width: 990px) and (max-width: 1300px) {
+                #jedanA,  #dvaA,  #triA,  #cetiriA {
+                    background-position: calc(100% - 20px) center;
+                }
+
+                #bitno-hrana a{
+                    padding-left: 0px;
+                    font-size: 14px;
+
+        }
+             }
+
 </style>
